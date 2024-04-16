@@ -18,7 +18,7 @@ void reverseString(stack<char>charStack){
 int main(){
     
     stack<char>stringStack;
-    string s = "samir";
+    string s = "samir shrestha";
 
     //cout << "Enter your String: " << endl;
     //cin >> s;
