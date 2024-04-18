@@ -5,6 +5,17 @@ using namespace std;
 
 void print(list<int> printList){
 
+    cout << "Linked list in forward direction: " <<endl;; 
+    for( auto it = printList.begin(); it != printList.end(); it++){
+        cout << *it <<" " << endl;
+    }
+
+}
+
+void reversePrint(list<int> printList){
+
+    printList.reverse(); //reverses the linked list
+    cout << endl << "List after reversing: " << endl;
     for( auto it = printList.begin(); it != printList.end(); it++){
         cout << *it <<" " << endl;
     }
@@ -23,5 +34,13 @@ int main(){
 
     print(intList);
 
+    intList.pop_front(); //removes the first emelent
+    intList.pop_back(); //removes the last element
+
+    reversePrint(intList); 
+
     return 0;
+
+
+
 }
