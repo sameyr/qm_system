@@ -1,19 +1,18 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 #include <stack>
 
 using namespace std;
 
 
 bool isPalindrome(string userString){
-
     stack<string> reverseStringStack;
     string reverseString;
     string word = "";
 
     // for loop to push each word into a stack
     for(int i = 0 ; i <= userString.length(); i++){
-        
         if(userString[i] == ' ' || i == userString.length()){
             reverseStringStack.push(word);
             word = "";
