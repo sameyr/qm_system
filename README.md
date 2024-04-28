@@ -1,6 +1,7 @@
 # QM SYSTEM
 ## Author
-Samir Shrestha - sameyr
 
-Sagar Sapkota - sagarspk
+1. [Samir Shrestha](https://github.com/sameyr)
+
+2. [Sagar Sapkota](https://github.com/sagarspk)
 
