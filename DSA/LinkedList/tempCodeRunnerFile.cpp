@@ -85,6 +85,7 @@ int main(){
     third->Next = NULL;
 
     insertNewNodeAtEnd(&head,90);
+    cout <<"laudu"<<endl;
     insertNewNodeAtx(second,5);
     
     printList(head);    //Invoking the print function
