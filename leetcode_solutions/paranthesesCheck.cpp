@@ -1,3 +1,27 @@
+/*
+Q.20. Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
+ 
+
+Example 1:
+
+Input: s = "()"
+Output: true
+Example 2:
+
+Input: s = "()[]{}"
+Output: true
+Example 3:
+
+Input: s = "(]"
+Output: false
+*/
+
 #include <iostream>
 #include <stack>
 #include <string>
@@ -23,8 +47,25 @@ public:
             }
         }
     }
-    
     return brackets.empty(); // Check if all opening brackets have been matched
     }
     
 };
+
+int main(){
+    Solution s1;
+    string input;
+    bool output;
+
+    cout <<"ENter a string of brackets: " ;
+    cin >> input;
+
+    output = s1.isValid(input);
+    if (output == 1){    
+        cout << "The Parantheses string is valid." << endl;
+    }
+    else{
+        cout << "The Parantheses string is invalid." << endl;
+    }
+    return 0;
+}
